@@ -1,4 +1,4 @@
-AUTHOR = 'Votre Nom'
+AUTHOR = 'Hilali Salwa'
 SITENAME = 'Mon CV'
 SITEURL = 'http://localhost:8000'
 

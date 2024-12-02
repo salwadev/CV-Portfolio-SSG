@@ -26,18 +26,22 @@ cd CV-Portfolio-SSG
 ```
 .
 ├── content/
-│   ├── pages/           # Contenu Markdown
+│   ├── pages/           # Contenu Markdown (CV et Portfolio)
 │   │   ├── mon-cv.md
 │   │   └── portfolio.md
 │   └── images/          # Images
 ├── themes/
 │   └── cv-theme/
-│       ├── static/      # Assets
-│       └── templates/   # Templates HTML
-├── docker-compose.yml   # Configuration Docker
-├── Dockerfile.dev       # Build développement
-├── Dockerfile.prod      # Build production
-└── pelicanconf.py      # Configuration Pelican
+│       ├── static/      # Assets CSS, JS, images
+│       └── templates/   # Templates HTML 
+├── docker-compose.yml   # Configuration Docker (dev et prod)
+├── Dockerfile.dev       # Build développement (hot reload)
+├── Dockerfile.prod      # Build production (optimisé)
+├── nginx.conf           # Configuration Nginx
+├── pelicanconf.py       # Configuration Pelican (variables)
+├── publishconf.py      # Configuration Pelican (publication)
+└── requirements.txt    # Liste des dépendances (Python)
+
 ```
 
 ## 🔧 Configuration
@@ -45,7 +49,7 @@ cd CV-Portfolio-SSG
 ### Pelican (`pelicanconf.py`)
 
 ```python
-AUTHOR = 'Votre Nom'
+AUTHOR = 'Full Name'
 SITENAME = 'Mon CV'
 THEME = 'themes/cv-theme'
 ```
@@ -107,5 +111,7 @@ Image: images/profile.jpg
 3. Personnalisez les styles dans `themes/cv-theme/static/css/`
 
 
+## 📧 Contact
+Hilali Salwa - [@salwaHilali](https://www.linkedin.com/in/salwa-hleli-806905113/)
 
 
