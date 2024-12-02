@@ -1,16 +1,13 @@
 # CV/Portfolio avec Pelican et Docker
 
-Un site web statique élégant combinant CV et Portfolio, construit avec Pelican et déployé via Docker.
+ un site web statique contenant un CV (type vitrine) en utilisant Pelican comme générateur de site statique et Docker pour gérer les phases de développement, de build et de run.
 
 ## 🚀 Fonctionnalités
 
-- 📱 Design responsive
-- 🌓 Mode sombre/clair
-- ✨ Animations fluides
-- 📊 Portfolio interactif
-- 🎨 Design moderne
-- 🔄 Hot reload en développement
-
+- 📄  Personnalisation facile via Markdown (CV et Portfolio)
+- 🔄 Hot reload en développement (Prévisualisation instantanée en temps réel)
+- ✨ Configuration flexible via Pelican (Variables et Publication)
+- 📊 Optimisation des performances (Génération de fichiers HTML statiques optimisés)
 
 
 ## 🛠️ Installation
