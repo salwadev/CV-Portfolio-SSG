@@ -19,7 +19,7 @@ Un site web statique élégant combinant CV et Portfolio, construit avec Pelican
 
 ```bash
 git clone https://github.com/salwadev/CV-Portfolio-SSG.git
-cd cv-portfolio
+cd CV-Portfolio-SSG
 ```
 ## 📁 Structure du Projet
 
