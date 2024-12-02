@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Theme CSS - Essayons différents chemins -->
+    <link rel="stylesheet" href="/theme/css/style.css">
+    <!-- Alternative paths si le premier ne fonctionne pas -->
+    <!-- <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="../theme/css/style.css"> -->
+</head>
+<body>
+    <!-- Pour déboguer, affichons le SITEURL -->
+    <!-- http://localhost:8000 -->
+<div class="cv-container">
+    <nav class="portfolio-nav">
+        <a href="/" class="nav-link active">
+            <i class="fas fa-user"></i> CV
+        </a>
+        <a href="/portfolio.html" class="nav-link">
+            <i class="fas fa-briefcase"></i> Portfolio
+        </a>
+    </nav>
+
+    <div class="cv-content-wrapper">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                        <img src="/images/user.png" alt="Salwa Hilali">
+                </div>
+                <h1 class="name">Salwa Hilali</h1>
+                <div class="social-links">
+                        <a href="https://linkedin.com/in/johndoe" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/johndoe" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:john.doe@email.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <h2>Profil</h2>
+<p>Développeur Full Stack web et mobile passionné avec plus de 5 ans d'expérience dans le développement web.</p>
+<h2>Expériences Professionnelles</h2>
+<h3>Développeur Senior - TechCorp</h3>
+<h4>2020-présent</h4>
+<ul>
+<li>Développement d'applications web avec React et Node.js</li>
+<li>Gestion d'équipe de 5 développeurs</li>
+</ul>
+<h3>Développeur Full Stack - WebAgency</h3>
+<h4>2018-2020</h4>
+<ul>
+<li>Développement frontend avec Vue.js</li>
+<li>API REST avec Django</li>
+</ul>
+<h2>Compétences</h2>
+<h3>Frontend</h3>
+<ul>
+<li>HTML5/CSS3</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Vue.js</li>
+</ul>
+<h3>Backend</h3>
+<ul>
+<li>Node.js</li>
+<li>Python</li>
+<li>Django</li>
+<li>Docker</li>
+</ul>
+<h3>Mobile</h3>
+<ul>
+<li>React Native</li>
+<li>Flutter</li>
+</ul>
+<h2>Formation</h2>
+<ul>
+<li>Master en Informatique - Université de Paris (2018)</li>
+<li>Licence en Informatique - Université de Lyon (2016)</li>
+</ul>
+            </div>
+        </main>
+    </div>
+</div>
+
+    <!-- Ajoutons un script pour déboguer -->
+    <script>
+        console.log('CSS path:', document.styleSheets);
+    </script>
+</body>
+</html> 

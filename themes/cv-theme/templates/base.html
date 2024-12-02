@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ SITENAME }}{% endblock title %}</title>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Theme CSS - Essayons différents chemins -->
+    <link rel="stylesheet" href="/theme/css/style.css">
+    <!-- Alternative paths si le premier ne fonctionne pas -->
+    <!-- <link rel="stylesheet" href="theme/css/style.css">
+    <link rel="stylesheet" href="../theme/css/style.css"> -->
+</head>
+<body>
+    <!-- Pour déboguer, affichons le SITEURL -->
+    <!-- {{ SITEURL }} -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Ajoutons un script pour déboguer -->
+    <script>
+        console.log('CSS path:', document.styleSheets);
+    </script>
+</body>
+</html> 

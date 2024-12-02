@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cv-container">
+    <nav class="portfolio-nav">
+        <a href="/" class="nav-link active">
+            <i class="fas fa-user"></i> CV
+        </a>
+        <a href="/portfolio.html" class="nav-link">
+            <i class="fas fa-briefcase"></i> Portfolio
+        </a>
+    </nav>
+
+    <div class="cv-content-wrapper">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    {% if page.image %}
+                        <img src="/{{ page.image }}" alt="{{ page.title }}">
+                    {% else %}
+                        <img src="/static/images/user.png" alt="Profile par défaut">
+                    {% endif %}
+                </div>
+                <h1 class="name">{{ page.title }}</h1>
+                <div class="social-links">
+                    {% if page.linkedin %}
+                        <a href="{{ page.linkedin }}" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    {% endif %}
+                    {% if page.github %}
+                        <a href="{{ page.github }}" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    {% endif %}
+                    {% if page.email %}
+                        <a href="mailto:{{ page.email }}" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                {{ page.content }}
+            </div>
+        </main>
+    </div>
+</div>
+{% endblock %} 
